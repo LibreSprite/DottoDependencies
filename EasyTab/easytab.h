@@ -827,7 +827,7 @@ EasyTabResult EasyTab_Load_Ex(HWND Window,
         AXIS        RangeY     = {0};
         AXIS        Pressure   = {0};
 
-        EasyTab->WTInfoA(WTI_DDCTXS, 0, &LogContext);
+        EasyTab->WTInfoA(WTI_DEFCONTEXT, 0, &LogContext);
         EasyTab->WTInfoA(WTI_DEVICES, DVC_X, &RangeX);
         EasyTab->WTInfoA(WTI_DEVICES, DVC_Y, &RangeY);
         EasyTab->WTInfoA(WTI_DEVICES, DVC_NPRESSURE, &Pressure);
